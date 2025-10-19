@@ -1,24 +1,26 @@
-# 🧩 API RESTful de Gestion de Projets Agile
-
-  <br/>
-  
-## 🌍 À propos
-
-Cette **API RESTful** aide les **Product Owners**, **Scrum Masters** et **Développeurs** à gérer et suivre efficacement l’avancement des **tâches** et des **User Stories** tout au long du cycle de vie d’un **projet Agile**.
+# 🧩 Agile Project Management RESTful API
 
 <br/>
 
-## 🎯 Objectifs principaux
+## 🌍 About
 
-- Suivi des **Product Backlogs** et **Sprint Backlogs**.  
-- Organisation et priorisation des **User Stories** par **Epics**.  
-- Gestion des **Tasks** associées aux **User Stories** et suivi de leur état : *To Do*, *In Progress*, *Done*.  
-- Planification et suivi des **Sprints**.
+This **RESTful API** helps **Product Owners**, **Scrum Masters**, and **Developers** efficiently manage and track the progress of **tasks** and **User Stories** throughout the lifecycle of an **Agile project**.
 
 <br/>
 
-## 🧩 Endpoints principaux (Swagger UI)
-Voici un aperçu des endpoints exposés par l’API à travers Swagger :
+## 🎯 Main Objectives
+
+- Track **Product Backlogs** and **Sprint Backlogs**.  
+- Organize and prioritize **User Stories** by **Epics**.  
+- Manage **Tasks** linked to **User Stories** and track their states: *To Do*, *In Progress*, *Done*.  
+- Plan and monitor **Sprints**.
+
+<br/>
+
+## 🧩 Main Endpoints (Swagger UI)
+
+Here is an overview of the API endpoints displayed through Swagger:
+
 ### product-backlog
 <p align="center">
   <img src="docs/product-backlog.png" alt="product-backlog" width="600"/>
@@ -31,7 +33,7 @@ Voici un aperçu des endpoints exposés par l’API à travers Swagger :
 
 ### epic
 <p align="center">
-  <img src="docs/epic.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="docs/epic.png" alt="epic" width="600"/>
 </p>
 
 ### user-story
@@ -51,26 +53,25 @@ Voici un aperçu des endpoints exposés par l’API à travers Swagger :
 
 <br/>
 
-## 🧱 Architecture et Technologies
+## 🧱 Architecture & Technologies
 
-| Couche              | Technologie                          | Rôle |
-|----------------------|--------------------------------------|------|
-| **Framework principal** | Spring Boot                        | Démarrage rapide, gestion des beans |
-| **Web Layer**           | Spring Web                         | Expose les endpoints REST |
-| **Service Layer**       | Java + Spring                      | Contient la logique métier |
-| **Data Layer**          | JPA + Hibernate + MySQL            | Persistance des données |
-| **Security Layer**      | Spring Security + JWT              | Authentification & autorisation |
-| **Mapping Layer**       | MapStruct / ModelMapper            | Conversion DTO ↔ Entité |
-| **Documentation**       | Springdoc OpenAPI (Swagger UI)     | Documentation interactive |
-| **Productivité**        | Lombok, DevTools                   | Simplifie et accélère le développement |
-| **Tests**               | JUnit, Mockito                     | Tests unitaires et d’intégration |
-
+| Layer | Technology | Role |
+|-------|-------------|------|
+| **Main Framework** | Spring Boot | Quick setup, dependency management |
+| **Web Layer** | Spring Web | Exposes REST endpoints |
+| **Service Layer** | Java + Spring | Contains business logic |
+| **Data Layer** | JPA + Hibernate + MySQL | Data persistence |
+| **Security Layer** | Spring Security + JWT | Authentication & authorization |
+| **Mapping Layer** | MapStruct / ModelMapper | DTO ↔ Entity conversion |
+| **Documentation** | Springdoc OpenAPI (Swagger UI) | Interactive API documentation |
+| **Productivity Tools** | Lombok, DevTools | Simplify and speed up development |
+| **Testing** | JUnit, Mockito | Unit and integration testing |
 
 <br/>
- 
-## 🧩DTOS
 
-| DTO | Champs |
+## 🧩 DTOs
+
+| DTO | Fields |
 |------|--------|
 | **DescriptionDTO** | `id`, `role`, `besoin`, `raison` |
 | **User** | `id`, `name`, `email`, `passwd`, `role`, `version` |
@@ -83,7 +84,7 @@ Voici un aperçu des endpoints exposés par l’API à travers Swagger :
 
 <br/>
 
-## 🚀 Démarrage du projet
+## 🚀 Run the Project
 
 ```bash
 git clone https://github.com/zinaakhtat/RestApiProject.git
@@ -91,36 +92,36 @@ cd RestApiProject
 mvn spring-boot:run
 ```
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-1. **Fork** le repository
+1. **Fork** the repository
 
-2. **Créer une branche** pour votre fonctionnalité
+2. **Create a new branch** for your feature
 
 ```bash
 git checkout -b feature/AmazingFeature
 ```
 
-3. **Committer** vos changements
+3. **Commit** your changes
 
 ```bash
 git commit -m "Add AmazingFeature"
 ```
 
-4. **Pousser** vers la branche
+4. **Push** to the branch
 
 ```bash
 git commit -m "Add AmazingFeature"
 ```
 
-5. **Ouvrir** une Pull Request
+5. **Open** a Pull Request
 
 <br/>
 
 ## 📄 Licence
 
-Projet sous licence **MIT**.  
-Voir le fichier [LICENCE](licence) pour plus de détails.
+This project is licensed under the MIT License.
+See the [LICENCE](licence) file for more details.
 
 <br/>
 
