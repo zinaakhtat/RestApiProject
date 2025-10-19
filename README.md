@@ -19,6 +19,74 @@ Cette **API RESTful** aide les **Product Owners**, **Scrum Masters** et **Dével
 
 ## 🧩 Endpoints principaux (Swagger UI)
 Voici un aperçu des endpoints exposés par l’API à travers Swagger :
+### product-backlog
 <p align="center">
-  <img src="docs/.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="docs/product-backlog.png" alt="product-backlog" width="600"/>
 </p>
+
+### sprintbacklog
+<p align="center">
+  <img src="docs/sprintbacklog.png" alt="sprintbacklog" width="600"/>
+</p>
+
+### epic
+<p align="center">
+  <img src="docs/epic.png" alt="Dashboard Screenshot" width="600"/>
+</p>
+
+### user-story
+<p align="center">
+  <img src="docs/user-story.png" alt="user-story" width="600"/>
+</p>
+
+### task
+<p align="center">
+  <img src="docs/task.png" alt="task" width="600"/>
+</p>
+
+### user
+<p align="center">
+  <img src="docs/user.png" alt="user" width="600"/>
+</p>
+
+<br/>
+
+## 🧱 Architecture et Technologies
+
+| Couche              | Technologie                          | Rôle |
+|----------------------|--------------------------------------|------|
+| **Framework principal** | Spring Boot                        | Démarrage rapide, gestion des beans |
+| **Web Layer**           | Spring Web                         | Expose les endpoints REST |
+| **Service Layer**       | Java + Spring                      | Contient la logique métier |
+| **Data Layer**          | JPA + Hibernate + MySQL            | Persistance des données |
+| **Security Layer**      | Spring Security + JWT              | Authentification & autorisation |
+| **Mapping Layer**       | MapStruct / ModelMapper            | Conversion DTO ↔ Entité |
+| **Documentation**       | Springdoc OpenAPI (Swagger UI)     | Documentation interactive |
+| **Productivité**        | Lombok, DevTools                   | Simplifie et accélère le développement |
+| **Tests**               | JUnit, Mockito                     | Tests unitaires et d’intégration |
+
+
+<br/>
+ 
+## 🧩Base de données
+
+| DTO | Champs |
+|------|--------|
+| **DescriptionDTO** | `id`, `role`, `besoin`, `raison` |
+| **User** | `id`, `name`, `email`, `passwd`, `role`, `version` |
+| **UserStoryDTO** | `id`, `titre`, `priorite`, `statut`, `description`, `taskIds`, `sprintBacklogId`, `epicId`, `productBacklogId` |
+| **TaskDTO** | `id`, `titre`, `description`, `statut`, `userStoryId`, `sprintBacklogId` |
+| **SprintBacklogDTO** | `id`, `nom`, `datedebut`, `datefin`, `userStoryIds`, `taskIds` |
+| **ProductBacklogDTO** | `id`, `nom`, `userStoryIds`, `epicIds` |
+| **EpicDTO** | `id`, `titre`, `description`, `userStoryIds`, `productBacklogId` |
+| **LoginRequest** | `email`, `password` |
+
+## 🚀 Démarrage du projet
+
+```bash
+git clone <repo>
+cd projet
+mvn spring-boot:run
+```
+
+
