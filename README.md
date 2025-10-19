@@ -120,7 +120,7 @@ git commit -m "Add AmazingFeature"
 ## 📄 Licence
 
 Projet sous licence **MIT**.  
-Voir le fichier [LICENSE](Licence) pour plus de détails.
+Voir le fichier [LICENSE](licence) pour plus de détails.
 
 <br/>
 
