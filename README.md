@@ -68,7 +68,7 @@ Voici un aperçu des endpoints exposés par l’API à travers Swagger :
 
 <br/>
  
-## 🧩Base de données
+## 🧩DTOS
 
 | DTO | Champs |
 |------|--------|
@@ -81,12 +81,46 @@ Voici un aperçu des endpoints exposés par l’API à travers Swagger :
 | **EpicDTO** | `id`, `titre`, `description`, `userStoryIds`, `productBacklogId` |
 | **LoginRequest** | `email`, `password` |
 
+<br/>
+
 ## 🚀 Démarrage du projet
 
 ```bash
-git clone <repo>
-cd projet
+git clone https://github.com/zinaakhtat/RestApiProject.git
+cd RestApiProject
 mvn spring-boot:run
 ```
 
+## 🤝 Contribution
+
+1. **Fork** le repository
+
+2. **Créer une branche** pour votre fonctionnalité
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. **Committer** vos changements
+
+```bash
+git commit -m "Add AmazingFeature"
+```
+
+4. **Pousser** vers la branche
+
+```bash
+git commit -m "Add AmazingFeature"
+```
+
+5. **Ouvrir** une Pull Request
+
+<br/>
+
+## 📄 Licence
+
+Projet sous licence **MIT**.  
+Voir le fichier [LICENSE](Licence) pour plus de détails.
+
+<br/>
 
